@@ -51,5 +51,4 @@ public class ManterPaisController extends HttpServlet {
 		RequestDispatcher view = request.getRequestDispatcher("Pais.jsp");
 		view.forward(request, response);		
 	}
-
 }

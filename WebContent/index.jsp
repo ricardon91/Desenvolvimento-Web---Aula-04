@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,34 +8,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Criar País</title>
+    <title>Criar PaÃ­s</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Barra superior com os menus de navegação -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Cadastro</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">País</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Container Principal -->
+    <!-- Barra superior com os menus de navegaÃ§Ã£o -->
+	<c:import url="menu.jsp"/>
+	<!-- Container Principal -->
     <div id="main" class="container">
         <h3 class="page-header" style="margin-top: 60px">Incluir País</h3>
         <!-- Formulario para inclusao de clientes -->
@@ -52,14 +37,14 @@
 
                 <div class="form-group col-md-6">
                     <label for="email">Área</label>
-                    <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="área do país">
+                    <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="Área do país">
                 </div>
             </div>
             <hr />
             <div id="actions" class="row">
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-primary" name="acao" value="Criar">Salvar</button>
-                    <a href="index.html" class="btn btn-default">Cancelar</a>
+                    <a href="index.jsp" class="btn btn-default">Cancelar</a>
                 </div>
             </div>
         </form>
