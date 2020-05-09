@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
@@ -11,11 +11,14 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.jsp">Cadastro</a>
+			<a class="navbar-brand" href="index.jsp">World Information</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="index.jsp">País</a></li>
+				<li><a href="listar_paises.do?acao=reiniciar">Países</a></li>
+				<li><a href="#">Marcas</a></li>
+				<li><a href="#">Estilos</a></li>
+				<li><a href="#">Outros</a></li>
 			</ul>
 		</div>
 	</div>
